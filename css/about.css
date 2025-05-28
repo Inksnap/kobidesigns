@@ -29,7 +29,7 @@
 }
 
 .hero-text h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--kobi-charcoal);
   margin-bottom: 1.5rem;
@@ -86,8 +86,8 @@
 }
 
 .story-text h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 600;
   color: var(--kobi-charcoal);
   margin-bottom: 2rem;
 }
@@ -395,7 +395,7 @@
 }
 
 .cta-content h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -480,7 +480,7 @@
   }
 
   .hero-text h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .hero-stats {
@@ -498,7 +498,7 @@
   }
 
   .hero-text h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .hero-text p {
@@ -511,7 +511,7 @@
   }
 
   .story-text h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .team-grid {
@@ -524,7 +524,7 @@
   }
 
   .cta-content h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .cta-content p {
@@ -543,11 +543,11 @@
   }
 
   .hero-text h1 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   .story-text h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   .team-grid {

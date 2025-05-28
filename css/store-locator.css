@@ -1,0 +1,118 @@
+/* Store Locator Page Styles */
+.locator-hero {
+  background: linear-gradient(135deg, #17a2b8, #138496);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.locator-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.search-section {
+  padding: 40px 0;
+  background: white;
+}
+
+.search-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.location-search {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.location-search input {
+  flex: 1;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.location-search button {
+  background: #17a2b8;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.location-search button:hover {
+  background: #138496;
+}
+
+.map-container {
+  height: 400px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.stores-section {
+  padding: 60px 0;
+  background: #f8f9fa;
+}
+
+.stores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.store-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.store-card h3 {
+  color: #17a2b8;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.store-info {
+  margin-bottom: 15px;
+}
+
+.store-info p {
+  color: #666;
+  margin-bottom: 5px;
+  line-height: 1.6;
+}
+
+.store-hours {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.store-hours h4 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.hours-list {
+  font-size: 0.9rem;
+  color: #666;
+}

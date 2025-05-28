@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Quote - KobiDesigns | Instant Printing Quotes</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Get instant quotes for your printing projects at KobiDesigns. Custom pricing for business cards, flyers, banners, and more. Fast and accurate estimates.">
+    <meta name="keywords" content="printing quote Nigeria, instant quote, printing prices, custom printing cost, business card quote">
+    <meta name="author" content="KobiDesigns">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/quote.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <a href="track-order.html" class="top-link">
+                        <i class="icon-map-pin"></i>
+                        Track Order
+                    </a>
+                    <a href="store-locator.html" class="top-link">
+                        <i class="icon-store"></i>
+                        Store Locator
+                    </a>
+                    <a href="tel:+2348031234567" class="top-link">
+                        <i class="icon-phone"></i>
+                        +234 803 123 4567
+                    </a>
+                </div>
+                <div class="top-bar-right">
+                    <a href="sample-kit.html" class="top-link">Sample Kit</a>
+                    <span class="business-badge">Business Solutions</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/kobi-logo.png" alt="KobiDesigns Logo" width="120" height="40">
+                    </a>
+                </div>
+                <div class="search-container">
+                    <form class="search-form" action="search.html" method="GET">
+                        <input type="text" name="q" placeholder="Search for products, templates, or services..." class="search-input">
+                        <button type="submit" class="search-btn">Search</button>
+                    </form>
+                </div>
+                <div class="header-actions">
+                    <a href="upload-design.html" class="header-link">
+                        <i class="icon-upload"></i>
+                        <span>Upload Design</span>
+                    </a>
+                    <a href="account.html" class="header-link">
+                        <i class="icon-user"></i>
+                        <span>Account</span>
+                    </a>
+                    <a href="cart.html" class="cart-link">
+                        <i class="icon-shopping-cart"></i>
+                        <span class="cart-count">3</span>
+                    </a>
+                    <a href="quote.html" class="btn btn-primary active">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="section-header">
+                <h1>Get Instant Quote</h1>
+                <p>Get accurate pricing for your printing project in seconds</p>
+            </div>
+
+            <div class="quote-content">
+                <div class="quote-form-container">
+                    <form class="quote-form" id="quoteForm">
+                        <div class="form-step active" data-step="1">
+                            <h3>Step 1: Choose Product Type</h3>
+                            <div class="product-grid">
+                                <div class="product-option" data-product="business-cards">
+                                    <div class="product-icon">
+                                        <i class="icon-credit-card"></i>
+                                    </div>
+                                    <h4>Business Cards</h4>
+                                    <p>Professional business cards</p>
+                                </div>
+                                <div class="product-option" data-product="flyers">
+                                    <div class="product-icon">
+                                        <i class="icon-file-text"></i>
+                                    </div>
+                                    <h4>Flyers</h4>
+                                    <p>Promotional flyers & leaflets</p>
+                                </div>
+                                <div class="product-option" data-product="brochures">
+                                    <div class="product-icon">
+                                        <i class="icon-book"></i>
+                                    </div>
+                                    <h4>Brochures</h4>
+                                    <p>Folded brochures & catalogs</p>
+                                </div>
+                                <div class="product-option" data-product="banners">
+                                    <div class="product-icon">
+                                        <i class="icon-flag"></i>
+                                    </div>
+                                    <h4>Banners</h4>
+                                    <p>Large format banners</p>
+                                </div>
+                                <div class="product-option" data-product="stickers">
+                                    <div class="product-icon">
+                                        <i class="icon-tag"></i>
+                                    </div>
+                                    <h4>Stickers</h4>
+                                    <p>Custom stickers & labels</p>
+                                </div>
+                                <div class="product-option" data-product="other">
+                                    <div class="product-icon">
+                                        <i class="icon-more"></i>
+                                    </div>
+                                    <h4>Other</h4>
+                                    <p>Custom printing projects</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="2">
+                            <h3>Step 2: Specifications</h3>
+                            <div class="spec-grid">
+                                <div class="spec-group">
+                                    <label class="spec-label">Size</label>
+                                    <select class="spec-select" id="size">
+                                        <option value="standard">Standard (3.5" x 2")</option>
+                                        <option value="square">Square (2.5" x 2.5")</option>
+                                        <option value="mini">Mini (3" x 1.5")</option>
+                                        <option value="custom">Custom Size</option>
+                                    </select>
+                                </div>
+                                <div class="spec-group">
+                                    <label class="spec-label">Paper Type</label>
+                                    <select class="spec-select" id="paper">
+                                        <option value="300gsm">Standard (300gsm)</option>
+                                        <option value="350gsm">Premium (350gsm)</option>
+                                        <option value="400gsm">Luxury (400gsm)</option>
+                                    </select>
+                                </div>
+                                <div class="spec-group">
+                                    <label class="spec-label">Finish</label>
+                                    <select class="spec-select" id="finish">
+                                        <option value="matte">Matte</option>
+                                        <option value="gloss">Gloss</option>
+                                        <option value="soft-touch">Soft Touch</option>
+                                        <option value="spot-uv">Spot UV</option>
+                                    </select>
+                                </div>
+                                <div class="spec-group">
+                                    <label class="spec-label">Quantity</label>
+                                    <input type="number" class="spec-input" id="quantity" min="1" value="100">
+                                </div>
+                                <div class="spec-group">
+                                    <label class="spec-label">Sides</label>
+                                    <select class="spec-select" id="sides">
+                                        <option value="single">Single Sided</option>
+                                        <option value="double">Double Sided</option>
+                                    </select>
+                                </div>
+                                <div class="spec-group">
+                                    <label class="spec-label">Colors</label>
+                                    <select class="spec-select" id="colors">
+                                        <option value="full-color">Full Color (CMYK)</option>
+                                        <option value="black-white">Black & White</option>
+                                        <option value="spot-color">Spot Color</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="3">
+                            <h3>Step 3: Additional Options</h3>
+                            <div class="options-grid">
+                                <div class="option-card">
+                                    <input type="checkbox" id="rush-order" class="option-checkbox">
+                                    <label for="rush-order" class="option-label">
+                                        <div class="option-header">
+                                            <h4>Rush Order</h4>
+                                            <span class="option-price">+₦5,000</span>
+                                        </div>
+                                        <p>24-48 hour turnaround</p>
+                                    </label>
+                                </div>
+                                <div class="option-card">
+                                    <input type="checkbox" id="design-service" class="option-checkbox">
+                                    <label for="design-service" class="option-label">
+                                        <div class="option-header">
+                                            <h4>Design Service</h4>
+                                            <span class="option-price">+₦10,000</span>
+                                        </div>
+                                        <p>Professional design assistance</p>
+                                    </label>
+                                </div>
+                                <div class="option-card">
+                                    <input type="checkbox" id="proof-service" class="option-checkbox">
+                                    <label for="proof-service" class="option-label">
+                                        <div class="option-header">
+                                            <h4>Digital Proof</h4>
+                                            <span class="option-price">Free</span>
+                                        </div>
+                                        <p>Review before printing</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="4">
+                            <h3>Step 4: Contact Information</h3>
+                            <div class="contact-grid">
+                                <div class="form-group">
+                                    <label class="form-label required">Full Name</label>
+                                    <input type="text" class="form-input" id="fullName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label required">Email</label>
+                                    <input type="email" class="form-input" id="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label required">Phone</label>
+                                    <input type="tel" class="form-input" id="phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Company</label>
+                                    <input type="text" class="form-input" id="company">
+                                </div>
+                                <div class="form-group full-width">
+                                    <label class="form-label">Project Details</label>
+                                    <textarea class="form-textarea" id="details" rows="4" placeholder="Tell us more about your project..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-navigation">
+                            <button type="button" class="btn btn-outline" id="prevBtn" style="display: none;">Previous</button>
+                            <button type="button" class="btn btn-primary" id="nextBtn">Next</button>
+                            <button type="submit" class="btn btn-primary" id="submitBtn" style="display: none;">Get Quote</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="quote-summary">
+                    <div class="summary-card">
+                        <h3>Quote Summary</h3>
+                        <div class="summary-item">
+                            <span class="summary-label">Product:</span>
+                            <span class="summary-value" id="summaryProduct">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Quantity:</span>
+                            <span class="summary-value" id="summaryQuantity">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Paper:</span>
+                            <span class="summary-value" id="summaryPaper">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Finish:</span>
+                            <span class="summary-value" id="summaryFinish">-</span>
+                        </div>
+                        <div class="summary-divider"></div>
+                        <div class="summary-item total">
+                            <span class="summary-label">Estimated Total:</span>
+                            <span class="summary-value" id="summaryTotal">₦0</span>
+                        </div>
+                        <div class="summary-note">
+                            <p>Final price may vary based on design complexity and additional requirements.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefits-card">
+                        <h4>Why Choose KobiDesigns?</h4>
+                        <ul class="benefits-list">
+                            <li><i class="icon-check"></i> Premium quality materials</li>
+                            <li><i class="icon-check"></i> Fast turnaround times</li>
+                            <li><i class="icon-check"></i> Professional design support</li>
+                            <li><i class="icon-check"></i> Competitive pricing</li>
+                            <li><i class="icon-check"></i> Nationwide delivery</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-about">
+                    <img src="images/kobi-logo-white.png" alt="KobiDesigns Logo" class="footer-logo">
+                    <p class="footer-description">Your trusted partner for professional printing and promotional solutions.</p>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="icon-phone"></i>
+                            <span>+234 803 123 4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="icon-mail"></i>
+                            <span>hello@kobidesigns.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="business-cards.html">Business Cards</a></li>
+                        <li><a href="corporate-gifts.html">Corporate Gifts</a></li>
+                        <li><a href="marketing-materials.html">Marketing Materials</a></li>
+                        <li><a href="custom-apparel.html">Custom Apparel</a></li>
+                        <li><a href="promotional-items.html">Promotional Items</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="design-studio.html">Design Studio</a></li>
+                        <li><a href="same-day-delivery.html">Same Day Delivery</a></li>
+                        <li><a href="bulk-orders.html">Bulk Orders</a></li>
+                        <li><a href="corporate-solutions.html">Corporate Solutions</a></li>
+                        <li><a href="custom-design.html">Custom Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="help-center.html">Help Center</a></li>
+                        <li><a href="track-order.html">Track Order</a></li>
+                        <li><a href="returns.html">Returns & Refunds</a></li>
+                        <li><a href="quality-guarantee.html">Quality Guarantee</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2024 KobiDesigns. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                        <a href="cookie-policy.html">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/quote.js"></script>
+</body>
+</html>

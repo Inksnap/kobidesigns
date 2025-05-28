@@ -1,0 +1,62 @@
+/* General styling for support pages */
+.support-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.support-page h1 {
+  color: #007bff;
+}
+
+.support-page a {
+  color: #ff6b35;
+  text-decoration: none;
+}
+
+.support-page a:hover {
+  text-decoration: underline;
+}
+
+.support-page ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.support-page li {
+  margin-bottom: 10px;
+}
+
+/* New Pages Added: */
+.custom-apparel {
+  background-color: #007bff;
+  color: white;
+}
+
+.promotional-items {
+  background-color: #ff6b35;
+  color: white;
+}
+
+.help-center {
+  background-color: #333;
+  color: white;
+}
+
+.returns-refunds {
+  background-color: #ffcc00;
+  color: white;
+}
+
+.quality-guarantee {
+  background-color: #00cc00;
+  color: white;
+}
+
+/* CSS Files Added: */
+@import url("store-locator.css");
+@import url("quote.css");
+@import url("apparel.css");
+@import url("promotional.css");
+@import url("help-center.css");

@@ -1,0 +1,111 @@
+/* Promotional Items Page Styles */
+.promo-hero {
+  background: linear-gradient(135deg, #ff6b35, #e55a2b);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.promo-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.promo-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.promo-categories {
+  padding: 60px 0;
+  background: #f8f9fa;
+}
+
+.promo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.promo-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.promo-card:hover {
+  transform: translateY(-5px);
+}
+
+.promo-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.promo-card-content {
+  padding: 20px;
+}
+
+.promo-card h3 {
+  color: #ff6b35;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.promo-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.price-tag {
+  background: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.benefits-section {
+  padding: 60px 0;
+  background: white;
+}
+
+.benefits-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.benefits-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.benefit-item {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.benefit-item h4 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.benefit-item p {
+  color: #666;
+  font-size: 0.9rem;
+}

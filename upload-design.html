@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Your Design - KobiDesigns | Professional Printing Services</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Upload your custom design files to KobiDesigns for professional printing. We accept PDF, AI, PSD, and more. Get instant quotes and fast turnaround.">
+    <meta name="keywords" content="upload design Nigeria, custom printing, design files, PDF printing, professional printing services">
+    <meta name="author" content="KobiDesigns">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/upload.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <a href="track-order.html" class="top-link">
+                        <i class="icon-map-pin"></i>
+                        Track Order
+                    </a>
+                    <a href="store-locator.html" class="top-link">
+                        <i class="icon-store"></i>
+                        Store Locator
+                    </a>
+                    <a href="tel:+2348031234567" class="top-link">
+                        <i class="icon-phone"></i>
+                        +234 803 123 4567
+                    </a>
+                </div>
+                <div class="top-bar-right">
+                    <a href="sample-kit.html" class="top-link">Sample Kit</a>
+                    <span class="business-badge">Business Solutions</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/kobi-logo.png" alt="KobiDesigns Logo" width="120" height="40">
+                    </a>
+                </div>
+                <div class="search-container">
+                    <form class="search-form" action="search.html" method="GET">
+                        <input type="text" name="q" placeholder="Search for products, templates, or services..." class="search-input">
+                        <button type="submit" class="search-btn">Search</button>
+                    </form>
+                </div>
+                <div class="header-actions">
+                    <a href="upload-design.html" class="header-link active">
+                        <i class="icon-upload"></i>
+                        <span>Upload Design</span>
+                    </a>
+                    <a href="account.html" class="header-link">
+                        <i class="icon-user"></i>
+                        <span>Account</span>
+                    </a>
+                    <a href="cart.html" class="cart-link">
+                        <i class="icon-shopping-cart"></i>
+                        <span class="cart-count">3</span>
+                    </a>
+                    <a href="quote.html" class="btn btn-primary">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Upload Section -->
+    <section class="upload-section">
+        <div class="container">
+            <div class="section-header">
+                <h1>Upload Your Design</h1>
+                <p>Upload your custom design files and get professional printing with fast turnaround</p>
+            </div>
+
+            <div class="upload-content">
+                <div class="upload-area-container">
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-icon">
+                            <i class="icon-upload"></i>
+                        </div>
+                        <h3>Drag & Drop Your Files Here</h3>
+                        <p>or <button class="browse-btn" id="browseBtn">Browse Files</button></p>
+                        <input type="file" id="fileInput" multiple accept=".pdf,.ai,.psd,.eps,.jpg,.jpeg,.png,.tiff" style="display: none;">
+                        
+                        <div class="upload-info">
+                            <p><strong>Supported formats:</strong> PDF, AI, PSD, EPS, JPG, PNG, TIFF</p>
+                            <p><strong>Maximum file size:</strong> 100MB per file</p>
+                            <p><strong>Maximum files:</strong> 10 files at once</p>
+                        </div>
+                    </div>
+
+                    <div class="uploaded-files" id="uploadedFiles" style="display: none;">
+                        <h4>Uploaded Files</h4>
+                        <div class="files-list" id="filesList"></div>
+                    </div>
+                </div>
+
+                <div class="upload-options">
+                    <h3>Print Options</h3>
+                    
+                    <div class="option-group">
+                        <label class="option-label">Product Type</label>
+                        <select class="option-select" id="productType">
+                            <option value="">Select Product Type</option>
+                            <option value="business-cards">Business Cards</option>
+                            <option value="flyers">Flyers</option>
+                            <option value="brochures">Brochures</option>
+                            <option value="posters">Posters</option>
+                            <option value="banners">Banners</option>
+                            <option value="stickers">Stickers</option>
+                            <option value="letterhead">Letterhead</option>
+                            <option value="envelopes">Envelopes</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="option-group">
+                        <label class="option-label">Quantity</label>
+                        <input type="number" class="option-input" id="quantity" min="1" value="100" placeholder="Enter quantity">
+                    </div>
+
+                    <div class="option-group">
+                        <label class="option-label">Paper Type</label>
+                        <select class="option-select" id="paperType">
+                            <option value="standard">Standard (300gsm)</option>
+                            <option value="premium">Premium (350gsm)</option>
+                            <option value="luxury">Luxury (400gsm)</option>
+                        </select>
+                    </div>
+
+                    <div class="option-group">
+                        <label class="option-label">Finish</label>
+                        <select class="option-select" id="finish">
+                            <option value="matte">Matte</option>
+                            <option value="gloss">Gloss</option>
+                            <option value="soft-touch">Soft Touch</option>
+                            <option value="spot-uv">Spot UV</option>
+                        </select>
+                    </div>
+
+                    <div class="option-group">
+                        <label class="option-label">Special Instructions</label>
+                        <textarea class="option-textarea" id="instructions" placeholder="Any special requirements or notes..."></textarea>
+                    </div>
+
+                    <div class="upload-actions">
+                        <button class="btn btn-primary btn-large" id="getQuoteBtn">Get Instant Quote</button>
+                        <button class="btn btn-outline btn-large" id="saveForLaterBtn">Save for Later</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Guidelines -->
+    <section class="guidelines-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Design Guidelines</h2>
+                <p>Follow these guidelines to ensure the best print quality</p>
+            </div>
+
+            <div class="guidelines-grid">
+                <div class="guideline-card">
+                    <div class="guideline-icon">
+                        <i class="icon-file-text"></i>
+                    </div>
+                    <h4>File Format</h4>
+                    <p>Use PDF with embedded fonts for best results. AI and PSD files are also accepted.</p>
+                </div>
+
+                <div class="guideline-card">
+                    <div class="guideline-icon">
+                        <i class="icon-palette"></i>
+                    </div>
+                    <h4>Color Mode</h4>
+                    <p>Use CMYK color mode for printing. RGB files will be converted and may have color shifts.</p>
+                </div>
+
+                <div class="guideline-card">
+                    <div class="guideline-icon">
+                        <i class="icon-crop"></i>
+                    </div>
+                    <h4>Bleed Area</h4>
+                    <p>Include 3mm bleed on all sides. Important content should be 3mm from the edge.</p>
+                </div>
+
+                <div class="guideline-card">
+                    <div class="guideline-icon">
+                        <i class="icon-image"></i>
+                    </div>
+                    <h4>Resolution</h4>
+                    <p>Use 300 DPI minimum for all images and graphics to ensure crisp print quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-about">
+                    <img src="images/kobi-logo-white.png" alt="KobiDesigns Logo" class="footer-logo">
+                    <p class="footer-description">Your trusted partner for professional printing and promotional solutions.</p>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="icon-phone"></i>
+                            <span>+234 803 123 4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="icon-mail"></i>
+                            <span>hello@kobidesigns.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="business-cards.html">Business Cards</a></li>
+                        <li><a href="corporate-gifts.html">Corporate Gifts</a></li>
+                        <li><a href="marketing-materials.html">Marketing Materials</a></li>
+                        <li><a href="custom-apparel.html">Custom Apparel</a></li>
+                        <li><a href="promotional-items.html">Promotional Items</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="design-studio.html">Design Studio</a></li>
+                        <li><a href="same-day-delivery.html">Same Day Delivery</a></li>
+                        <li><a href="bulk-orders.html">Bulk Orders</a></li>
+                        <li><a href="corporate-solutions.html">Corporate Solutions</a></li>
+                        <li><a href="custom-design.html">Custom Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="help-center.html">Help Center</a></li>
+                        <li><a href="track-order.html">Track Order</a></li>
+                        <li><a href="returns.html">Returns & Refunds</a></li>
+                        <li><a href="quality-guarantee.html">Quality Guarantee</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2024 KobiDesigns. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                        <a href="cookie-policy.html">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/upload.js"></script>
+</body>
+</html>
